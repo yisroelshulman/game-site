@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
@@ -23,10 +24,13 @@ header {
 
 .l {
     height: 100%;
-    align-items: top;
     justify-content: left;
     font-family: "Brush Script MT";
     font-size: 48px;
+}
+
+.top {
+    height: auto;
 }
 
 .header-section a {
@@ -56,26 +60,38 @@ header {
 
 .gl li {
     background: #303030;
-    margin: 2px;
+    margin: 4px;
     padding: 10px;
     border-radius: 3px;
     align-items: center;
     justify-content: center;
 }
 
-.gli {
+.glil {
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
+    max-width: 40%;
+    height: 200px;
 }
 
-.gl-img {
+.gli-img {
+    height: 200;
+    width: 200;
+    max-height: 200px;
+    max-width: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 1;
+}
+
+.gli {
     flex: 1;
     width: auto;
-    max-width: 40%;
     display: flex;
-    min-height: 100px;
+    padding-right: 20px;
 }
 
 .gli img {
@@ -84,6 +100,18 @@ header {
     object-fit: scale-down;
     border-radius: 5px;
     border: 5px, solid black;
+}
+
+.gli a {
+    color: #ffffff;
+    font-size: 32px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+.gli a:hover {
+    opacity: 0.5;
 }
 
 footer {
@@ -103,7 +131,8 @@ footer {
     justify-content: center
 }
 
-.left, .right {
+.left,
+.right {
     display: flex;
 }
 
@@ -147,23 +176,34 @@ footer {
     transition: all, 0.3s, ease;
 }
 
-.icon img:hover, .footer-text a:hover {
+.icon img:hover,
+.footer-text a:hover {
     opacity: 0.7;
 }
 
 @media (max-width: 768px) {
-    .header-section, .footer-section, .header-section, .gl, .gli, header, footer {
+
+    .header-section,
+    .footer-section,
+    .header-section,
+    .gl,
+    .gli,
+    header,
+    footer {
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
 
-    .f, footer {
+    .f,
+    footer {
         height: auto;
         padding: 5px;
     }
 
-    .left, .right, .l {
+    .left,
+    .right,
+    .l {
         padding: 0px
     }
 
