@@ -1,3 +1,7 @@
-#deployment scripts
+# deployment scripts
 deploy.sh
+
+# deployment readiness files
+ready_to_deploy
+count.txt
 
