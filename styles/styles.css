@@ -372,6 +372,19 @@ footer {
         padding: 0px
     }
 
+    .filters {
+        width: 70%;
+    }
+
+    .filter-item,
+    .filter {
+        width: 90%;
+    }
+
+    .filters {
+        padding-bottom: 5px;
+    }
+
     .tags,
     .document,
     .documents-list li {
