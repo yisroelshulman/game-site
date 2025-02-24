@@ -30,17 +30,19 @@
                 <b>Filters:</b>
             </span>
             <div class="filter-item">
-                <input type="text" id="namefilter" placeholder="name/series" onkeyup="filterName()" , class="filter">
+                <input type="text" id="namefilter" placeholder="name/series" onkeyup="filterName()" class="filter">
             </div>
             <div class="filter-item">
-                <input type="text" id="playersfilter" placeholder="num players" onkeyup="filterPlayers()" ,
+                <input type="text" id="playersfilter" placeholder="num players" onkeyup="filterPlayers()"
                     class="filter">
             </div>
             <div class="filter-item">
-                <input type="text" id="ownersfilter" placeholder="owners" onkeyup="filterOwners()" , class="filter">
+                <input type="text" id="ownersfilter" placeholder="owners" onkeyup="filterOwners()" class="filter">
             </div>
             <div class="filter-item">
-                <input type="text" id="tagsfilter" placeholder="tags" onkeyup="filterTags()" , class="filter">
+                <input list="tagsList" type="text" id="tagsfilter" placeholder="tags" onkeyup="filterTags()"
+                    class="filter">
+                <datalist id="tagsList"></datalist>
             </div>
         </div>
     </div>

@@ -1,4 +1,47 @@
 
+const tagsList = document.getElementById('tagsList');
+
+document.addEventListener("DOMContentLoaded", function () {
+    let tagSet = new Set();
+
+    const gamesList = document.querySelectorAll('.filterable');
+    gamesList.forEach(filterable => {
+        const filters = filterable.getAttribute('filters');
+        if (!filters) {
+            return;
+        }
+
+        const filterArray = filters.toLowerCase().split("&");
+        let tags = "";
+        for (let i = 0; i < filterArray.length; i++) {
+            const filter = filterArray[i].split("=");
+            if (filter.length < 2) {
+                continue;
+            }
+            if (filter[0] === "tags") {
+                tags = filter[1];
+                break;
+            }
+        }
+
+        if (!tags) {
+            return;
+        }
+        console.log(tags)
+        tagSet.add(tags);
+    });
+
+    let g_tags = Array.from(tagSet).sort((a, b) => a - b)
+
+    g_tags.forEach(tag => {
+        let option = document.createElement("option");
+        option.value = tag;
+        tagsList.appendChild(option);
+    });
+
+});
+
+
 function filterName() {
 
     filter("namefilter", "name")
