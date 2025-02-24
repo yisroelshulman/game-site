@@ -49,6 +49,41 @@ header {
     justify-content: center;
 }
 
+.filters-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.filters {
+    background: #404040;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    border-radius: 10px;
+}
+
+.filters span {
+    color: #66c2ff;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.filter-item input::placeholder {
+    color: #66c2ff;
+}
+
+.filter {
+    background: #404040;
+    color: #ffcc00;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    min-height: 20px;
+}
+
 .home-page-container {
     flex: 1;
     margin: 5px;
@@ -63,7 +98,7 @@ header {
     background: #303030;
     margin: 4px;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -93,9 +128,10 @@ header {
     flex: 1;
 }
 
+
 .games-list-elem img {
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: scale-down;
     border-radius: 5px;
     border: 5px, solid #000000;
@@ -103,7 +139,7 @@ header {
 
 
 .games-list-elem a {
-    color: #ffffff;
+    color: #ffcc00;
     font-size: 48px;
     text-decoration: none;
     text-align: center;
@@ -304,9 +340,12 @@ footer {
     .header-section,
     .footer-section,
     .header-section,
+    .filters,
     .game,
     .games-list,
     .games-list-elem,
+    .game-details h2,
+    .document-item,
     .document,
     header,
     footer {
@@ -324,9 +363,28 @@ footer {
     .left,
     .right,
     .l,
+    .document-item,
+    .document,
+    .documents-list li,
+    .games-list-elem,
     .game-details p,
-    .game-drails h2 {
+    .game-details h2 {
         padding: 0px
+    }
+
+    .tags,
+    .document,
+    .documents-list li {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .games-list-elem a {
+        margin-top: 10px;
+    }
+
+    .filters span {
+        margin-top: 5px;
     }
 
     .icon {
