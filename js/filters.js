@@ -1,8 +1,10 @@
 
 const tagsList = document.getElementById('tagsList');
+const ownersList = document.getElementById('ownersList');
 
 document.addEventListener("DOMContentLoaded", function () {
     let tagSet = new Set();
+    let ownerSet = new Set();
 
     const gamesList = document.querySelectorAll('.filterable');
     gamesList.forEach(filterable => {
@@ -13,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const filterArray = filters.toLowerCase().split("&");
         let tags = "";
+        let owners = "";
         for (let i = 0; i < filterArray.length; i++) {
             const filter = filterArray[i].split("=");
             if (filter.length < 2) {
@@ -20,23 +23,33 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             if (filter[0] === "tags") {
                 tags = filter[1];
-                break;
+            }
+            if (filter[0] === "owners") {
+                owners = filter[1];
             }
         }
 
-        if (!tags) {
-            return;
+        if (tags) {
+            tagSet.add(tags);
+        }
+        if (owners) {
+            ownerSet.add(owners);
         }
         console.log(tags)
-        tagSet.add(tags);
     });
 
     let g_tags = Array.from(tagSet).sort((a, b) => a - b)
+    let g_owners = Array.from(ownerSet).sort((a, b) => a - b)
 
     g_tags.forEach(tag => {
         let option = document.createElement("option");
         option.value = tag;
         tagsList.appendChild(option);
+    });
+    g_owners.forEach(owner => {
+        let option = document.createElement("option");
+        option.value = owner;
+        ownersList.appendChild(option);
     });
 
 });

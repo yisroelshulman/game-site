@@ -107,6 +107,7 @@ header {
     flex: 1;
     width: auto;
     display: flex;
+    padding-left: 10px;
     padding-right: 20px;
 }
 
@@ -354,6 +355,11 @@ footer {
         align-items: center;
     }
 
+    .games-list-elem img {
+        max-height: 320px;
+        max-width: 320px;
+    }
+
     .f,
     footer {
         height: auto;
@@ -365,8 +371,8 @@ footer {
     .l,
     .document-item,
     .document,
-    .documents-list li,
     .games-list-elem,
+    .documents-list li,
     .game-details p,
     .game-details h2 {
         padding: 0px
