@@ -1,11 +1,11 @@
 
 const tagsList = document.getElementById('tagsList');
 const ownersList = document.getElementById('ownersList');
-const c_delimiter = "`"
+const c_delimiter = "\u237C"
 
 document.addEventListener("DOMContentLoaded", function () {
-    let tagSet = new Set();
-    let ownerSet = new Set();
+    var tagSet = new Set();
+    var ownerSet = new Set();
 
     const gamesList = document.querySelectorAll('.filterable');
     gamesList.forEach(filterable => {
@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         const filterArray = filters.toLowerCase().split("&");
-        let tags = "";
-        let owners = "";
-        for (let i = 0; i < filterArray.length; i++) {
+        var tags = "";
+        var owners = "";
+        for (var i = 0; i < filterArray.length; i++) {
             const filter = filterArray[i].split("=");
             if (filter.length < 2) {
                 continue;
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (tags) {
             t = tags.split(c_delimiter)
-            for (let i = 0; i < t.length; i++) {
+            for (var i = 0; i < t.length; i++) {
                 tagSet.add(t[i]);
             }
         }
@@ -41,16 +41,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    let g_tags = Array.from(tagSet).sort()
-    let g_owners = Array.from(ownerSet).sort()
+    var g_tags = Array.from(tagSet).sort()
+    var g_owners = Array.from(ownerSet).sort()
 
     g_tags.forEach(tag => {
-        let option = document.createElement("option");
+        var option = document.createElement("option");
         option.value = tag;
         tagsList.appendChild(option);
     });
     g_owners.forEach(owner => {
-        let option = document.createElement("option");
+        var option = document.createElement("option");
         option.value = owner;
         ownersList.appendChild(option);
     });
@@ -65,7 +65,7 @@ function filterName() {
 }
 
 function filterPlayers() {
-    let input = document.getElementById('playersfilter').value.toLowerCase();
+    var input = document.getElementById('playersfilter').value.toLowerCase();
     const gamesList = document.querySelectorAll('.filterable');
 
     gamesList.forEach(filterable => {
@@ -75,8 +75,8 @@ function filterPlayers() {
         }
 
         const filterArray = filters.toLowerCase().split("&");
-        let min, max = "";
-        for (let i = 0; i < filterArray.length; i++) {
+        var min, max = "";
+        for (var i = 0; i < filterArray.length; i++) {
             const filter = filterArray[i].split("=");
             if (filter.length < 2) {
                 continue;
@@ -100,13 +100,13 @@ function filterPlayers() {
         input = input.replace(/-+$/, "").trim();
         const vals = input.split("-");
 
-        let s_min = vals[0].trim();
-        let s_max = s_min;
+        var s_min = vals[0].trim();
+        var s_max = s_min;
         if (vals.length === 2) {
             s_max = vals[1].trim();
         }
 
-        let hide = false;
+        var hide = false;
         if (vals.length > 2) {
             hide = true;
         }
@@ -174,8 +174,8 @@ function filter(inputId, filterName) {
         }
 
         const filterArray = filters.toLowerCase().split("&");
-        let match = "";
-        for (let i = 0; i < filterArray.length; i++) {
+        var match = "";
+        for (var i = 0; i < filterArray.length; i++) {
             const filter = filterArray[i].split("=")
             if (filter.length < 2) {
                 continue;
