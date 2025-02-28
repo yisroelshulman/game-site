@@ -1,6 +1,7 @@
 
 const tagsList = document.getElementById('tagsList');
 const ownersList = document.getElementById('ownersList');
+const c_delimiter = "\u237C"
 
 document.addEventListener("DOMContentLoaded", function () {
     let tagSet = new Set();
@@ -30,12 +31,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (tags) {
-            tagSet.add(tags);
+            t = tags.split(c_delimiter)
+            for (let i = 0; i < t.length; i++) {
+                tagSet.add(t[i]);
+            }
         }
         if (owners) {
             ownerSet.add(owners);
         }
-        console.log(tags)
     });
 
     let g_tags = Array.from(tagSet).sort((a, b) => a - b)
@@ -56,12 +59,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function filterName() {
-
     filter("namefilter", "name")
 }
 
 function filterPlayers() {
-    console.log("palyers")
     let input = document.getElementById('playersfilter').value.toLowerCase();
     const gamesList = document.querySelectorAll('.filterable');
 
