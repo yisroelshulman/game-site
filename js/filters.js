@@ -55,8 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ownersList.appendChild(option);
     });
 
-    console.log(g_tags)
-
 });
 
 
