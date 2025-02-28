@@ -1,7 +1,7 @@
 
 const tagsList = document.getElementById('tagsList');
 const ownersList = document.getElementById('ownersList');
-const c_delimiter = "\u237C"
+const c_delimiter = "&"
 
 document.addEventListener("DOMContentLoaded", function () {
     let tagSet = new Set();
