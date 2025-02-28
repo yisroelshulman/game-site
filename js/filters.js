@@ -1,7 +1,7 @@
 
 const tagsList = document.getElementById('tagsList');
 const ownersList = document.getElementById('ownersList');
-const c_delimiter = "&"
+const c_delimiter = "`"
 
 document.addEventListener("DOMContentLoaded", function () {
     let tagSet = new Set();
@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    let g_tags = Array.from(tagSet).sort((a, b) => a - b)
-    let g_owners = Array.from(ownerSet).sort((a, b) => a - b)
+    let g_tags = Array.from(tagSet).sort()
+    let g_owners = Array.from(ownerSet).sort()
 
     g_tags.forEach(tag => {
         let option = document.createElement("option");
@@ -54,6 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
         option.value = owner;
         ownersList.appendChild(option);
     });
+
+    console.log(g_tags)
 
 });
 
