@@ -349,7 +349,6 @@ footer {
     .game,
     .games-list,
     .games-list-elem,
-    .game-list-elem a,
     .game-details h2,
     .document-item,
     .document,
@@ -358,6 +357,7 @@ footer {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        justify-content: center;
     }
 
     .games-list-elem img {
@@ -375,16 +375,10 @@ footer {
     .right,
     .l,
     .document-item,
-    .document,
     .games-list-elem,
-    .documents-list li,
     .game-details p,
     .game-details h2 {
-        padding: 0px
-    }
-
-    .filters {
-        width: 70%;
+        padding: 0px;
     }
 
     .filter-item,
@@ -394,17 +388,20 @@ footer {
 
     .filters {
         padding-bottom: 5px;
+        width: 70%;
     }
 
     .tags,
     .game-details,
     .document,
     .documents-list li {
+        padding: 0px;
         margin-left: 0;
         margin-right: 0;
     }
 
     .games-list-elem a {
+        text-align: center;
         margin-top: 10px;
     }
 
