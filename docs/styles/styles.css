@@ -116,7 +116,6 @@ header {
     display: flex;
     justify-content: right;
     align-items: right;
-    max-width: 40%;
     height: 350px;
 }
 
@@ -360,9 +359,15 @@ footer {
         justify-content: center;
     }
 
-    .games-list-elem img {
+    .games-list-elem-img {
+        padding-top: 10px;
+    }
+
+    .games-list-elem-img img {
         max-height: 320px;
         max-width: 320px;
+        height: 100%;
+        width: 90%;
     }
 
     .f,
