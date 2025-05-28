@@ -1,6 +1,6 @@
 #!/bin/bash
 
-start_time=$(date +%s%N)
+start_deploy_time=$(date +%s%N)
 
 ready="ready_to_deploy"
 deploy_num="count.txt"
@@ -23,17 +23,24 @@ if ! [[ "$count" =~ ^-?[0-9]+$ ]]; then
     exit 1
 fi
 
-rm ready_to_deploy
+rm "$ready"
 
 incremented=$((count + 1))
 echo $incremented > count.txt
 
+deploy_message=""
+if [[ "$1" == "" ]]; then
+    deploy_message="deploying website update, (depoyment # $incremented)."
+else
+    deploy_message="$1, (deployment # $incremented)."
+fi
+
 git add -u
 git add .
-git commit -m "deploying website update, deployment # $incremented."
+git commit -m "$deploy_message"
 git push
 
-end_time=$(date +%s%N)
-duration=$(( (end_time - start_time) / 1000000 ))
+end_deploy_time=$(date +%s%N)
+duration=$(( (end_deploy_time - start_deploy_time) / 1000000 ))
 
 echo "website update deployed, deploment time $duration milliseconds!"
