@@ -292,7 +292,6 @@ header {
 }
 
 .game-page-container {
-    flex: 1;
     width: 95%;
     margin: auto;
     background: var(--bg-game);
