@@ -1,0 +1,53 @@
+:root {
+    --icon-logo: url('https://drive.google.com/thumbnail?id=1zSGpTrBOGJfrFiZPIKI-dHhLj--NYjj3&sz=w2160');
+    --icon-gear: url('https://drive.google.com/thumbnail?id=1rBIFIHS6gNQZruQ8dkcDWM_WRMt21pDY');
+    --icon-sun: url('https://drive.google.com/thumbnail?id=103-lRpj6jJE9XIHITxEwove9gA595slu');
+    --icon-moon: url('https://drive.google.com/thumbnail?id=1lDqz6Hcy5ao06afX9yZ5DzcRKVP55IVz');
+    --icon-git: url('https://drive.google.com/thumbnail?id=1dIEW63foTIkUNoS8jV8vm0R2tdUo5DiJ');
+    --icon-linkedin: url('https://drive.google.com/thumbnail?id=1bI8qA6caoE-6PkDTwr-nEstibApWNxGz');
+}
+
+html[data-theme='light'] {
+    --icon-logo: url('https://drive.google.com/thumbnail?id=1nweJsBedwOVI7MJyj3yVz3yysdjVSR-S&sz=w2160');
+    --icon-gear: url('https://drive.google.com/thumbnail?id=13NOI7yemLgxwKNOnB9lEckofotYPnnlC');
+    --icon-sun: url('https://drive.google.com/thumbnail?id=18P0sXtr8kvOxNUDXjAD4CVNyyaL0nagP');
+    --icon-moon: url('https://drive.google.com/thumbnail?id=175oKdcDAwmixkevCjemDBHfA6gORHepR');
+    --icon-git: url('https://drive.google.com/thumbnail?id=14YBigBuSqC7cPRcWtKReG45Y39zFuqee');
+    --icon-linkedin: url('https://drive.google.com/thumbnail?id=1nDxbGh-vdsXib1EeZURk1BEKKgbp4Rg7');
+}
+
+.icon-logo {
+    content: var(--icon-logo);
+}
+
+.icon-gear {
+    content: var(--icon-gear);
+    max-height: 65%;
+    max-width: 65%;
+}
+
+.icon-sun {
+    content: var(--icon-sun);
+    max-height: 65%;
+    max-width: 65%;
+}
+
+.icon-moon {
+    content: var(--icon-moon);
+    max-height: 65%;
+    max-width: 65%;
+}
+
+.icon-git {
+    content: var(--icon-git);
+}
+
+.icon-linkedin {
+    content: var(--icon-linkedin);
+}
+
+.icon-foot {
+    max-width: 64px;
+    max-height: 64px;
+    transition: all, 0.3s, ease;
+}

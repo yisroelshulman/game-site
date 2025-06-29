@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Qwirkle</title>
     <link href="/styles/styles.css" rel="stylesheet">
+    <link href="/styles/icons-lib.css" rel="stylesheet">
     <link rel="icon" type="image/png"
         href="https://drive.google.com/thumbnail?id=1zSGpTrBOGJfrFiZPIKI-dHhLj--NYjj3&sz=w2160">
 </head>
@@ -18,10 +19,32 @@
             </div>
         </div>
         <div class="header-section">
-            <img src="https://drive.google.com/thumbnail?id=1zSGpTrBOGJfrFiZPIKI-dHhLj--NYjj3&sz=w2160" alt="Site Logo"
-                class="logo">
+            <span class="logo icon-logo" role="img" aria-label="logo"></span>
         </div>
         <div class="header-section">
+        </div>
+        <div id="settings-widget" title="Theme Settings">
+            <span class="icon-gear" role="img" aria-label="settings"></span>
+        </div>
+        <div id="theme-menu">
+            <div class="theme-option" data-theme="light">
+                <div class="theme-option-symbol">
+                    <span class="icon-sun" role="img" aria-label="light"></span>
+                </div>
+                <div>Light</div>
+            </div>
+            <div class="theme-option" data-theme="dark">
+                <div class="theme-option-symbol">
+                    <span class="icon-moon" role="img" aria-label="dark"></span>
+                </div>
+                <div>Dark</div>
+            </div>
+            <div class="theme-option" data-theme="system">
+                <div class="theme-option-symbol">
+                    <span class="icon-gear" role="img" aria-label="system"></span>
+                </div>
+                <div>System</div>
+            </div>
         </div>
     </header>
     <div class="game-page-container">
@@ -51,7 +74,7 @@
     <footer class="f">
         <div class="footer-section left f">
             <a href="https://github.com/yisroelshulman" target="_blank" class="icon">
-                <img src="https://drive.google.com/thumbnail?id=1dIEW63foTIkUNoS8jV8vm0R2tdUo5DiJ" alt="Github">
+                <span class="icon-git icon-foot" role="img" aria-label="github"></span>
             </a>
         </div>
         <div class="footer-section center">
@@ -63,10 +86,11 @@
         </div>
         <div class="footer-section right">
             <a href="https://www.linkedin.com/in/yisroelshulman" target="_blank" class="icon">
-                <img src="https://drive.google.com/thumbnail?id=1bI8qA6caoE-6PkDTwr-nEstibApWNxGz" alt="LinkedIn">
+                <span class="icon-linkedin icon-foot" role="img" aria-label="linkedin"></span>
             </a>
         </div>
     </footer>
+    <script src="/js/theme.js"></script>
 </body>
 
 </html>

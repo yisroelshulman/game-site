@@ -1,7 +1,7 @@
 
 const tagsList = document.getElementById('tagsList');
 const ownersList = document.getElementById('ownersList');
-const c_delimiter = "\u237C"
+const c_delimiter = "\u237C";
 
 document.addEventListener("DOMContentLoaded", function () {
     var tagSet = new Set();
@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-
 
 function filterName() {
     filter("namefilter", "name")
