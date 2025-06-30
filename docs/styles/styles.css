@@ -33,30 +33,30 @@
 html[data-theme="light"] {
     --text-header: #000000;
     --text-menu: #404040;
-    --text-filter: #694909;
+    --text-filter: #73403e;
     --text-filter-type: #00a0ae;
     --text-body: #000000;
     --text-list-game-name: #00a0ae;
     --text-footer-link: #000000;
 
     --text-game-title: #00a0ae;
-    --text-game-players: #694909;
+    --text-game-players: #73403e;
     --text-game-obj: #000000;
     --text-game-details-link: #0066cc;
 
     --bg-header: #c1eef4;
-    --bg-widget: #c8c8fa;
+    --bg-widget: #dbe6eb;
     --bg-menu: rgb(225, 225, 255, 0.85);
     --bg-option: rgb(255, 255, 255, 0.50);
     --bg-selected: rgb(193, 238, 244, 0.90);
-    --bg-filter: #e1e1ff;
+    --bg-filter: #dbe6eb;
     --bg-body: #f5f6f5;
-    --bg-list: #e1e1ff;
+    --bg-list: #dbe6eb;
     --bg-footer: #d5eef1;
 
-    --bg-game: #e7e7ff;
-    --bg-game-doc: #e0e0e0;
-    --bg-game-tag: #e0e0e0;
+    --bg-game: #dbe6eb;
+    --bg-game-doc: #cbbcbc;
+    --bg-game-tag: #cbbcbc;
 
     --outline-menu: #404040;
     --outline-option: #404040;
