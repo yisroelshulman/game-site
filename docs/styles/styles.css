@@ -33,16 +33,16 @@
 html[data-theme="light"] {
     --text-header: #000000;
     --text-menu: #404040;
-    --text-filter: #0066cc;
-    --text-filter-type: #cc8800;
+    --text-filter: #00a0ae;
+    --text-filter-type: #694909;
     --text-body: #000000;
-    --text-list-game-name: #cc8800;
+    --text-list-game-name: #00a0ae;
     --text-footer-link: #000000;
 
-    --text-game-title: #cc8800;
-    --text-game-players: #000000;
-    --text-game-obj: #0066cc;
-    --text-game-details-link: #cc8800;
+    --text-game-title: #00a0ae;
+    --text-game-players: #694909;
+    --text-game-obj: #000000;
+    --text-game-details-link: #0066cc;
 
     --bg-header: #c1eef4;
     --bg-widget: #c8c8fa;
@@ -218,6 +218,7 @@ header {
 .filter {
     background: var(--bg-filter);
     color: var(--text-filter-type);
+    font-weight: bold;
     border-radius: 10px;
     margin: 5px;
     text-align: center;
