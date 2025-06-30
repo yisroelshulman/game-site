@@ -33,8 +33,8 @@
 html[data-theme="light"] {
     --text-header: #000000;
     --text-menu: #404040;
-    --text-filter: #00a0ae;
-    --text-filter-type: #694909;
+    --text-filter: #694909;
+    --text-filter-type: #00a0ae;
     --text-body: #000000;
     --text-list-game-name: #00a0ae;
     --text-footer-link: #000000;
