@@ -15,8 +15,8 @@
     --bg-header: #111111;
     --bg-widget: #404040;
     --bg-menu: rgba(64, 64, 64, 0.85);
-    --bg-option: rgb(255, 255, 255, 0.50);
-    --bg-selected: rgb(27, 27, 27, 0.70);
+    --bg-option: rgba(255, 255, 255, 0.50);
+    --bg-selected: rgba(27, 27, 27, 0.70);
     --bg-filter: #404040;
     --bg-body: #1e1e1e;
     --bg-list: #303030;
@@ -26,37 +26,41 @@
     --bg-game-doc: #303030;
     --bg-game-tag: #404040;
 
+    --shadow-list: rgba(255, 255, 255, 0.2);
+
     --outline-menu: #ffffff;
     --outline-option: #ffffff;
 }
 
 html[data-theme="light"] {
-    --text-header: #000000;
-    --text-menu: #404040;
-    --text-filter: #73403e;
-    --text-filter-type: #00a0ae;
-    --text-body: #000000;
-    --text-list-game-name: #00a0ae;
-    --text-footer-link: #000000;
+    --text-header: #1e293b;
+    --text-menu: #1e293b;
+    --text-filter: #3366cc;
+    --text-filter-type: #5f7285;
+    --text-body: #1e293b;
+    --text-list-game-name: #1e293b;
+    --text-footer-link: #1e293b;
 
-    --text-game-title: #00a0ae;
-    --text-game-players: #73403e;
-    --text-game-obj: #000000;
-    --text-game-details-link: #0066cc;
+    --text-game-title: #1e293b;
+    --text-game-players: #5f7285;
+    --text-game-obj: #5f7285;
+    --text-game-details-link: #3366cc;
 
-    --bg-header: #c1eef4;
-    --bg-widget: #dbe6eb;
-    --bg-menu: rgb(225, 225, 255, 0.85);
-    --bg-option: rgb(255, 255, 255, 0.50);
-    --bg-selected: rgb(193, 238, 244, 0.90);
-    --bg-filter: #dbe6eb;
-    --bg-body: #f5f6f5;
-    --bg-list: #dbe6eb;
-    --bg-footer: #d5eef1;
+    --bg-header: #dce9ff;
+    --bg-widget: #9bbaf3;
+    --bg-menu: rgba(0, 0, 0, 0.1);
+    --bg-option: #ffffff;
+    --bg-selected: rgba(155, 186, 243, 1);
+    --bg-filter: #e0ecff;
+    --bg-body: #f7faff;
+    --bg-list: #ffffff;
+    --bg-footer: #e3efff;
 
-    --bg-game: #dbe6eb;
-    --bg-game-doc: #cbbcbc;
-    --bg-game-tag: #cbbcbc;
+    --bg-game: #ffffff;
+    --bg-game-doc: #e0ecff;
+    --bg-game-tag: #d1e4ff;
+
+    --shadow-list: rgba(0, 0, 0, 0.6);
 
     --outline-menu: #404040;
     --outline-option: #404040;
@@ -150,6 +154,7 @@ header {
     padding: 0.5rem 0;
     display: none;
     min-width: 150px;
+    z-index: 1000;
 }
 
 .theme-option {
@@ -238,9 +243,11 @@ header {
 
 .games-list li {
     background: var(--bg-list);
-    margin: 4px;
-    padding: 10px;
-    border-radius: 50px;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 70px;
+    box-shadow: 0 4px 6px var(--shadow-list);
     align-items: center;
     justify-content: center;
 }
@@ -249,8 +256,6 @@ header {
     flex: 1;
     width: auto;
     display: flex;
-    padding-left: 10px;
-    padding-right: 20px;
 }
 
 .games-list-eleml {
@@ -297,9 +302,10 @@ header {
     margin: auto;
     background: var(--bg-game);
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
+    box-shadow: 0 4px 6px var(--shadow-list);
 }
 
 .game {
