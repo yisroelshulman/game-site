@@ -311,8 +311,8 @@ header {
     background: var(--bg-game);
     padding: 20px;
     border-radius: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     box-shadow: 0 4px 6px var(--shadow-list);
 }
 
