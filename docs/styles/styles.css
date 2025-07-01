@@ -73,11 +73,18 @@ body {
     height: 100%;
     overflow-x: hidden;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     background-color: var(--bg-body);
     color: var(--text-body);
     display: flex;
     flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 header {
@@ -299,6 +306,7 @@ header {
 
 .game-page-container {
     width: 95%;
+    max-width: 95%;
     margin: auto;
     background: var(--bg-game);
     padding: 20px;
