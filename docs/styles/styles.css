@@ -66,7 +66,6 @@ html[data-theme="light"] {
     --outline-option: #404040;
 }
 
-
 html,
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -269,7 +268,6 @@ header {
     flex: 1;
     display: flex;
     justify-content: right;
-    align-items: right;
     height: 350px;
 }
 
@@ -281,7 +279,6 @@ header {
     display: flex;
     flex: 1;
 }
-
 
 .games-list-elem img {
     max-width: 100%;
@@ -321,7 +318,6 @@ header {
     align-items: center;
     gap: 20px;
 }
-
 
 .poster-container {
     flex: 1;
@@ -372,7 +368,6 @@ header {
 .game-details a {
     color: var(--text-game-details-link);
     font-size: 20px;
-    text-decoration: underline;
 }
 
 .game-details p {
@@ -474,7 +469,6 @@ footer {
 
 .footer-text a {
     color: var(--text-footer-link);
-    text-decoration: underline;
 }
 
 .icon img:hover,
