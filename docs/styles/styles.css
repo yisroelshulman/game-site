@@ -405,11 +405,19 @@ header {
     margin: 3px;
 }
 
+.links {
+    flex: 1;
+}
+
+.links a {
+    margin-right: 20px;
+    display: inline-block;
+}
+
 .tags {
     margin-left: 20px;
     margin-top: 10px;
     flex: 1;
-    display: fles;
 }
 
 .tags span {
