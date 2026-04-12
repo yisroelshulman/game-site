@@ -1,19 +1,19 @@
 :root {
-    --icon-logo: url('https://drive.google.com/thumbnail?id=1zSGpTrBOGJfrFiZPIKI-dHhLj--NYjj3&sz=w2160');
-    --icon-gear: url('https://drive.google.com/thumbnail?id=1rBIFIHS6gNQZruQ8dkcDWM_WRMt21pDY');
-    --icon-sun: url('https://drive.google.com/thumbnail?id=103-lRpj6jJE9XIHITxEwove9gA595slu');
-    --icon-moon: url('https://drive.google.com/thumbnail?id=1lDqz6Hcy5ao06afX9yZ5DzcRKVP55IVz');
-    --icon-git: url('https://drive.google.com/thumbnail?id=1dIEW63foTIkUNoS8jV8vm0R2tdUo5DiJ');
-    --icon-linkedin: url('https://drive.google.com/thumbnail?id=1bI8qA6caoE-6PkDTwr-nEstibApWNxGz');
+    --icon-logo: url('https://lh3.googleusercontent.com/d/1zSGpTrBOGJfrFiZPIKI-dHhLj--NYjj3=w400');
+    --icon-gear: url('https://lh3.googleusercontent.com/d/1rBIFIHS6gNQZruQ8dkcDWM_WRMt21pDY=w40');
+    --icon-sun: url('https://lh3.googleusercontent.com/d/103-lRpj6jJE9XIHITxEwove9gA595slu=w40');
+    --icon-moon: url('https://lh3.googleusercontent.com/d/1lDqz6Hcy5ao06afX9yZ5DzcRKVP55IVz=w40');
+    --icon-git: url('https://lh3.googleusercontent.com/d/1dIEW63foTIkUNoS8jV8vm0R2tdUo5DiJ=w440');
+    --icon-linkedin: url('https://lh3.googleusercontent.com/d/1bI8qA6caoE-6PkDTwr-nEstibApWNxGz=w440');
 }
 
 html[data-theme='light'] {
-    --icon-logo: url('https://drive.google.com/thumbnail?id=1nweJsBedwOVI7MJyj3yVz3yysdjVSR-S&sz=w2160');
-    --icon-gear: url('https://drive.google.com/thumbnail?id=13NOI7yemLgxwKNOnB9lEckofotYPnnlC');
-    --icon-sun: url('https://drive.google.com/thumbnail?id=18P0sXtr8kvOxNUDXjAD4CVNyyaL0nagP');
-    --icon-moon: url('https://drive.google.com/thumbnail?id=175oKdcDAwmixkevCjemDBHfA6gORHepR');
-    --icon-git: url('https://drive.google.com/thumbnail?id=14YBigBuSqC7cPRcWtKReG45Y39zFuqee');
-    --icon-linkedin: url('https://drive.google.com/thumbnail?id=1nDxbGh-vdsXib1EeZURk1BEKKgbp4Rg7');
+    --icon-logo: url('https://lh3.googleusercontent.com/d/1nweJsBedwOVI7MJyj3yVz3yysdjVSR-S=w400');
+    --icon-gear: url('https://lh3.googleusercontent.com/d/13NOI7yemLgxwKNOnB9lEckofotYPnnlC=w40');
+    --icon-sun: url('https://lh3.googleusercontent.com/d/18P0sXtr8kvOxNUDXjAD4CVNyyaL0nagP=w40');
+    --icon-moon: url('https://lh3.googleusercontent.com/d/175oKdcDAwmixkevCjemDBHfA6gORHepR=w40');
+    --icon-git: url('https://lh3.googleusercontent.com/d/14YBigBuSqC7cPRcWtKReG45Y39zFuqee=w440');
+    --icon-linkedin: url('https://lh3.googleusercontent.com/d/1nDxbGh-vdsXib1EeZURk1BEKKgbp4Rg7=w440');
 }
 
 .icon-logo {
